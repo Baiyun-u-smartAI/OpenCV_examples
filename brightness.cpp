@@ -1,13 +1,14 @@
-#include <opencv/cv.h>
-#include <opencv/highgui.h>
+#include "OpenCV_example.hpp"
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
 #include <iostream>
 using namespace cv;
 
 double alpha; /**< Simple contrast control */
 int beta; /**< Simple brightness control */
-int main(int argc, char** argv)
+int run913()
 {
-	Mat image = imread("C:\\images\\lena.jpg");
+	Mat image = imread("1.jpg");
 
 	Mat new_image = Mat::zeros(image.size(), image.type());
 	imshow("zero", new_image);
@@ -42,3 +43,5 @@ int main(int argc, char** argv)
 
 	return 0;
 }
+
+int(*run_brightness)()=run913;

@@ -1,3 +1,4 @@
+#include "OpenCV_example.hpp"
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include "opencv2/imgproc/imgproc.hpp"
@@ -5,15 +6,15 @@
 
 using namespace cv;
 
-int main()
+int run2356()
 {
 	Mat image1, image2, image3;
 
-	image1 = imread("C:\\images\\lake.jpg");
+	image1 = imread("1.jpg");
 	if (!image1.data)
 		return 0;
 
-	image2= imread("C:\\images\\fur.jpg");
+	image2= imread("2.png");
 	if (!image2.data)
 		return 0; 
 
@@ -41,3 +42,5 @@ int main()
 
 	return 0;
 }
+
+int (*run_Effect)() =&run2356;

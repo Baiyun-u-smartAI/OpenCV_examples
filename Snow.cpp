@@ -1,3 +1,4 @@
+#include "OpenCV_example.hpp"
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <iostream>
@@ -5,25 +6,28 @@
 using namespace cv;
 using namespace std;
 
-int main(int argc, char** argv)
+
+//为了多重导入cpp文件，只是将main函数换了个名字
+int run137()
 {
-	argv[1] = "C:\\images\\lake.jpg";
+
+
 
 	Mat image;
 
 	// 载入图形文件
-	image = imread(argv[1], CV_LOAD_IMAGE_COLOR);
+	image = imread("1.jpg", IMREAD_COLOR);
 
 	// 检查读取文件是否成功
 	if (!image.data)
 	{
-		cout << "无法打开或找不到图形文件" << std::endl;
+		cout << "无法打开或找不到图形文件1.jpg" << std::endl;
 		return -1;
 	}
 
 	// 建立显示图档窗口
-	namedWindow("原图", CV_WINDOW_NORMAL);
-	namedWindow("下雪图", CV_WINDOW_NORMAL);
+	namedWindow("原图", WINDOW_NORMAL);
+	namedWindow("下雪图", WINDOW_NORMAL);
 
 	imshow("原图", image);
 
@@ -37,11 +41,11 @@ int main(int argc, char** argv)
 		int j = rand() % image.rows;
 		if (image.channels() == 1) { // gray-level image
 			image.at<uchar>(j, i) = 255;
-			if (i < (int)image.cols)
+			if (j < (int)image.cols-1)
 				image.at<uchar>(j + 1, i) = 255;
-			if (j < (int)image.rows)
+			if (i < (int)image.rows-1)
 				image.at<uchar>(j, i + 1) = 255;
-			if (i < (int)image.cols && j < (int)image.rows)
+			if (i < (int)image.cols-1 && j < (int)image.rows-1)
 				image.at<uchar>(j + 1, i + 1) = 255;
 		}
 		else if (image.channels() == 3) { // color image
@@ -77,3 +81,5 @@ int main(int argc, char** argv)
 
 	return 0;
 }
+
+int (*run_snow)() =&run137;

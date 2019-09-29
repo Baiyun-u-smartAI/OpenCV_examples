@@ -1,3 +1,4 @@
+#include "OpenCV_example.hpp"
 #include <opencv2/core/core.hpp>
 #include <iostream>
 #include <string>
@@ -74,9 +75,9 @@ static ostream& operator<<(ostream& out, const MyData& m)
 	return out;
 }
 
-int main(int ac, char** av)
+int run542()
 {
-	string filename = "C:\\images\\process\\outputfile.yml";
+	string filename = "outputfile.yml";
 
 	// Ð´Èë
 	{
@@ -175,3 +176,5 @@ int main(int ac, char** av)
 
 	return 0;
 }
+
+int(*run_file_input_output)()=run542;

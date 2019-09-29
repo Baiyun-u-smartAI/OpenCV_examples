@@ -1,3 +1,4 @@
+#include "OpenCV_example.hpp"
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <iostream>
@@ -11,13 +12,13 @@ Mat& ScanImageAndReduceC(Mat& I, const uchar* table);
 Mat& ScanImageAndReduceIterator(Mat& I, const uchar* table);
 Mat& ScanImageAndReduceRandomAccess(Mat& I, const uchar * table);
 
-int main(int argc, char* argv[])
+int run2301()
 {
 	Mat I, J;
-	I = imread("C:\\images\\lena.jpg", CV_LOAD_IMAGE_COLOR);
+	I = imread("1.jpg", IMREAD_COLOR);
 	if (!I.data)
 	{
-		cout << "无法载入 lena.jpg 图档." << endl;
+		cout << "无法载入 1.jpg 图档." << endl;
 		return -1;
 	}
 
@@ -203,3 +204,5 @@ Mat& ScanImageAndReduceRandomAccess(Mat& I, const uchar* const table)
 
 	return I;
 }
+
+int(*run_how_to_scan_images)()=run2301;

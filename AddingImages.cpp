@@ -1,9 +1,10 @@
+#include "OpenCV_example.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include <iostream>
 
 using namespace cv;
 
-int main(void)
+int run3129()
 {
 
 	double alpha = 0, beta, input;
@@ -17,14 +18,14 @@ int main(void)
 	std::cin >> input;
 
 	// 确认 alpha 值数入的正确在于 0 与 1 之间
-	if (alpha >= 0 && alpha <= 1)
+	if (input >= 0 && input <= 1)
 	{
 		alpha = input;
 	}
 
 	/// 读取两个大小与类型相同的图文件
-	src1 = imread("C:\\images\\LinuxLogo.jpg");
-	src2 = imread("C:\\images\\WindowsLogo.jpg");
+	src1 = imread("LinuxLogo.jpg");
+	src2 = imread("WindowsLogo.jpg");
 
 	if (!src1.data)
 	{ std::cout << "Error loading src1" << std::endl; return -1; }
@@ -42,3 +43,5 @@ int main(void)
 	waitKey(0);
 	return 0;
 }
+
+int(*run_AddingImages)()=run3129;

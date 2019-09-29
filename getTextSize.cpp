@@ -1,11 +1,13 @@
+#include "OpenCV_example.hpp"
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
 #include <iostream>
 #include <stdio.h>
 
 using namespace cv;
-
-int main(void)
+using namespace std;
+int run901()
 {
 	string text = "Text and rectangle demostration";
 	int fontFace = FONT_HERSHEY_SCRIPT_SIMPLEX;
@@ -40,5 +42,7 @@ int main(void)
 	imshow("getText", img);
 
 	waitKey();
+	return 0;
 }
 
+int(*run_getTextSize)()=run901;

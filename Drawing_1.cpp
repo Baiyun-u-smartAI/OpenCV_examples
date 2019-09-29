@@ -1,3 +1,4 @@
+#include "OpenCV_example.hpp"
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
@@ -12,7 +13,7 @@ void MyFilledCircle(Mat img, Point center);
 void MyPolygon(Mat img);
 void MyLine(Mat img, Point start, Point end);
 
-int main(void){
+int run775(){
 
   /// ´°¿ÚÃû³Æ
   char atom_window[] = "Drawing 1: Atom";
@@ -149,3 +150,5 @@ void MyLine(Mat img, Point start, Point end)
     thickness,
     lineType);
 }
+
+int(*run_Drawing_1)()=run775;

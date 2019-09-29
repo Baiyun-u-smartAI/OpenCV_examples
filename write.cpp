@@ -1,11 +1,12 @@
+#include "OpenCV_example.hpp"
 #include "opencv2/opencv.hpp"
 #include <time.h>
 
 using namespace cv;
 
-int main(int, char** argv)
+int run132()
 {
-	FileStorage fs("c:/images/process/test.yml", FileStorage::WRITE);
+	FileStorage fs("test_write.yml", FileStorage::WRITE);
 
 	fs << "frameCount" << 5;
 	time_t rawtime; time(&rawtime);
@@ -32,3 +33,5 @@ int main(int, char** argv)
 	fs.release();
 	return 0;
 }
+
+int(*run_write)()=run132;

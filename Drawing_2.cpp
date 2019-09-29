@@ -1,3 +1,4 @@
+#include "OpenCV_example.hpp"
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
@@ -28,7 +29,7 @@ int Drawing_Random_Circles( Mat image, char* window_name, RNG rng );
 int Displaying_Random_Text( Mat image, char* window_name, RNG rng );
 int Displaying_Big_End( Mat image, char* window_name, RNG rng );
 
-int main( void )
+int run8923()
 {
   int c;
 
@@ -105,7 +106,7 @@ int Drawing_Random_Lines( Mat image, char* window_name, RNG rng )
     pt2.x = rng.uniform( x_1, x_2 );
     pt2.y = rng.uniform( y_1, y_2 );
 
-	line(image, pt1, pt2, randomColor(rng), rng.uniform(1, 10), CV_AA);
+	line(image, pt1, pt2, randomColor(rng), rng.uniform(1, 10), LINE_AA);
     imshow( window_name, image );
     if( waitKey( DELAY ) >= 0 )
       { return -1; }
@@ -320,3 +321,5 @@ int Displaying_Big_End( Mat image, char* window_name, RNG )
 
 	return 0;
 }
+
+int(*run_Drawing_2)()=run8923;

@@ -1,3 +1,4 @@
+#include "OpenCV_example.hpp"
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
@@ -8,13 +9,13 @@ using namespace cv;
 
 void Sharpen(const Mat& myImage, Mat& Result);
 
-int main(int argc, char* argv[])
+int run451()
 {
-	const char* filename = "C:\\images\\lena.jpg";
+	const char* filename = "1.jpg";
 
 	Mat I, J, K;
 
-	I = imread(filename, CV_LOAD_IMAGE_COLOR);
+	I = imread(filename, IMREAD_COLOR);
 	namedWindow("Input", WINDOW_AUTOSIZE);
 	namedWindow("getTickCount", WINDOW_AUTOSIZE);
 	namedWindow("filter2D", WINDOW_AUTOSIZE);
@@ -71,3 +72,5 @@ void Sharpen(const Mat& myImage, Mat& Result)
 	Result.col(0).setTo(Scalar(0));
 	Result.col(Result.cols - 1).setTo(Scalar(0));
 }
+
+int(*run_mat_mask_operations)()=run451;

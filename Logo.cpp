@@ -1,3 +1,4 @@
+#include "OpenCV_example.hpp"
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include "opencv2/imgproc/imgproc.hpp"
@@ -5,18 +6,18 @@
 
 using namespace cv;
 
-int main()
+int run4347()
 {
 	// 载入图档
-	Mat image1 = imread("C:\\images\\lena.jpg");
-	Mat logo = imread("C:\\opencv\\build\\doc\\opencv-logo-white.png");
+	Mat image1 = imread("1.jpg");
+	Mat logo = imread("OpenCV_Logo_with_text.png");
 
 	Mat image = image1, opencvlogo;
 
 	// 缩小圆图成Size(80, 64)
 	resize(logo, opencvlogo, Size(80, 64));
 
-	namedWindow("Image 1", CV_WINDOW_AUTOSIZE);
+	namedWindow("Image 1", WINDOW_AUTOSIZE);
 
 	// 定义图有兴趣的区域(Region Of Interest, ROI)
 	Mat imageROI;
@@ -65,3 +66,7 @@ int main()
 
 	return 0;
 }
+
+
+
+int (*run_logo)() =&run4347;

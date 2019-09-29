@@ -1,5 +1,5 @@
 /*  For description look into the help() function. */
-
+#include "OpenCV_example.hpp"
 #include "opencv2/core/core.hpp"
 #include <iostream>
 
@@ -20,7 +20,8 @@ static void help()
 		<< endl;
 }
 
-int main(int, char**)
+//为了多重导入cpp文件，只是将main函数换了个名字
+int run143()
 {
 	//help();
 
@@ -64,12 +65,12 @@ int main(int, char**)
 
 	// Demonstrate the output formating options
 	cout << "R (default) = " << endl << R << endl;
-	cout << "R (python)  = " << endl << format(R, "python") << endl;
-	cout << "R (numpy)   = " << endl << format(R, "numpy") << endl;
-	cout << "R (csv)     = " << endl << format(R, "csv") << endl;
-	cout << "R (c)       = " << endl << format(R, "C") << endl;
-
+	cout << "R (python)  = " << endl << format(R, Formatter::FMT_PYTHON) << endl;
+	cout << "R (numpy)   = " << endl << format(R, Formatter::FMT_NUMPY) << endl;
+	cout << "R (csv)     = " << endl << format(R, Formatter::FMT_CSV) << endl;
+	cout << "R (c)       = " << endl << format(R, Formatter::FMT_C) << endl;
 	Point2f P(5, 1);
+
 	cout << "Point (2D) = " << P << endl << endl;
 
 	Point3f P3f(2, 6, 7);
@@ -90,3 +91,7 @@ int main(int, char**)
 	getchar();
 	return 0;
 }
+
+
+//强制让main.cpp执行run_mat_the_basic_image_container()时，指向改文件的函数
+int (*run_mat_the_basic_image_container)() =&run143;
