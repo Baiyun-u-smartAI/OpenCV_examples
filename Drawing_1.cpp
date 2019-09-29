@@ -2,12 +2,13 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
-
+// 图片(窗口)大小
 #define w 400
 
 using namespace cv;
 
 /// 函数声明
+// 输入是空白的img，绘画后，把值写回输入变量img中
 void MyEllipse(Mat img, double angle);
 void MyFilledCircle(Mat img, Point center);
 void MyPolygon(Mat img);
@@ -19,12 +20,13 @@ int run775(){
   char atom_window[] = "Drawing 1: Atom";
   char rook_window[] = "Drawing 2: Rook";
 
-  /// 建立空的黑图
+  /// 建立空的黑图  zeros全零矩阵
+  // 数据格式 CV_8UC3  8位uchar数据3通道
   Mat atom_image = Mat::zeros(w, w, CV_8UC3);
   Mat rook_image = Mat::zeros(w, w, CV_8UC3);
 
   /// 1. 简单绘图
-  /// ----------------------- 
+  /// -----------------------
 
   /// 1.a. 绘椭圆
   MyEllipse(atom_image, 90);
@@ -35,13 +37,13 @@ int run775(){
   /// 1.b. 绘圆
   MyFilledCircle(atom_image, Point(w / 2, w / 2));
 
-  /// 2. 绘 rook 
-  /// ------------------ 
+  /// 2. 绘 rook
+  /// ------------------
 
   /// 2.a. 绘凸面多边型
   MyPolygon(rook_image);
 
-  /// 2.b. 绘长方形 
+  /// 2.b. 绘长方形
   rectangle(rook_image,
          Point(0, 7 * w / 8),
          Point(w, w),
@@ -49,7 +51,7 @@ int run775(){
          - 1,
          8);
 
-  /// 2.c. 绘直线 
+  /// 2.c. 绘直线
   MyLine(rook_image, Point(0, 15 * w / 16), Point(w, 15 * w / 16));
   MyLine(rook_image, Point(w / 4, 7 * w / 8), Point(w / 4, w));
   MyLine(rook_image, Point(w / 2, 7 * w / 8), Point(w / 2, w));
@@ -73,7 +75,8 @@ void MyEllipse(Mat img, double angle)
 {
   int thickness = 2;
   int lineType = 8;
-
+  // Scalar(255, 0, 0) 代表RGB空间的某颜色
+  // Point 椭圆中心点
   ellipse(img,
        Point(w / 2, w / 2),
        Size(w / 4, w / 16),

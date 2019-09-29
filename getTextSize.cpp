@@ -17,6 +17,8 @@ int run901()
 	Mat img(300, 900, CV_8UC3, Scalar::all(0));
 
 	int baseline = 0;
+	// Calculates the width and height of a text string.
+	// 返回的Size里面textSize.width和textSize.height
 	Size textSize = getTextSize(text, fontFace,
 		fontScale, thickness, &baseline);
 	baseline += thickness;
@@ -35,6 +37,7 @@ int run901()
 		Scalar(0, 0, 255));
 
 	// then put the text itself
+	// Scalar::all(255)就是Scalar(255, 255, 255)
 	putText(img, text, textOrg, fontFace, fontScale,
 		Scalar::all(255), thickness, 8);
 

@@ -1,3 +1,0 @@
-D:/C/U2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/C/U2/cmake-build-debug/CMakeFiles/p8.dir
-D:/C/U2/cmake-build-debug/CMakeFiles/edit_cache.dir

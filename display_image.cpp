@@ -16,6 +16,8 @@ int run5332()
     image = imread("1.jpg", IMREAD_COLOR);
 
 	// 检查文件是否读取成功
+    // image 是cv::Mat 类型，如果读图失败，则cv::Mat::data=nullptr
+    // 对于式子(!nullptr) 结果为true
     if(! image.data )
     {
         cout <<  "无法打开或找不到图形文件" << std::endl ;
@@ -25,8 +27,7 @@ int run5332()
 	// 建立显示图形文件的窗口
 	namedWindow("Display window", WINDOW_NORMAL);
 
-	// CV_WINDOW_FREERATIO 与 CV_WINDOW_KEEPRATIO
-	// CV_GUI_NORMAL 与 CV_GUI_EXPANDED
+
 
 	// 在窗口显示图形文件
     imshow( "Display window", image );

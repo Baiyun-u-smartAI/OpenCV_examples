@@ -17,7 +17,7 @@ int run3129()
 	std::cout << "* 输入 0 到 1 的 alpha 值: ";
 	std::cin >> input;
 
-	// 确认 alpha 值数入的正确在于 0 与 1 之间
+	// 确认 输入的alpha 值(input)数入的正确在于 0 与 1 之间
 	if (input >= 0 && input <= 1)
 	{
 		alpha = input;
@@ -36,6 +36,7 @@ int run3129()
 	namedWindow("Linear Blend", 1);
 
 	beta = (1.0 - alpha);
+	// dst = src1*alpha + src2*beta + gamma;
 	addWeighted(src1, alpha, src2, beta, 0.0, dst);
 
 	imshow("Linear Blend", dst);

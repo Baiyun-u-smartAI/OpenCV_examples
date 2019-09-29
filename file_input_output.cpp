@@ -20,18 +20,20 @@ static void help(char** av)
 		<< "             - use it to read and write matrices." << endl;
 }
 */
-// 定义自我数据结构
+// 定义自我数据结构，数据库的生成
+// 对象的声明和实例化都在这里
 class MyData
 {
 public:
+	//声明构造函数
 	MyData() : A(0), X(0), id()
 	{}
 
-	// 开放以避免隐性转换
+	// 构造函数有一个输入值时，需开放(explicit)以避免隐性转换
 	explicit MyData(int) : A(97), X(CV_PI), id("mydata1234")
 	{}
-	
-	// 
+
+	//
 	void write(FileStorage& fs) const
 	{
 		fs << "{" << "A" << A << "X" << X << "id" << id << "}";
@@ -95,7 +97,7 @@ int run542()
 		fs << "C:\\images\\lena.jpg" << "Awesomeness"
 			<< "C:\\images\\baboon.jpg";
 		// 字符串结束
-		fs << "]";                                           
+		fs << "]";
 
 		// 字符串匹配(mapping)
 		fs << "Mapping";

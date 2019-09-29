@@ -1,3 +1,0 @@
-D:\cmake-3.13.3\bin\cmake.exe -E remove -f CMakeFiles\U2.dir/objects.a
-D:\MinGW-w64\mingw64\bin\ar.exe cr CMakeFiles\U2.dir/objects.a @CMakeFiles\U2.dir\objects1.rsp
-D:\MinGW-w64\mingw64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\U2.dir/objects.a -Wl,--no-whole-archive  -o U2.exe -Wl,--out-implib,libU2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\U2.dir\linklibs.rsp

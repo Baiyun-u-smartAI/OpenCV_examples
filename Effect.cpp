@@ -16,7 +16,7 @@ int run2356()
 
 	image2= imread("2.png");
 	if (!image2.data)
-		return 0; 
+		return 0;
 
 	// 以image2图像大小调整image1图像大小
 	resize(image2, image3, image1.size());
@@ -28,11 +28,12 @@ int run2356()
 	namedWindow("Image 3");
 	imshow("Image 3",image3);
 
-	// 雨天特效图
+	// 两图像叠加图
 	Mat result;
 
 	image3 = image3 * 0.3;
 	image1 = image1 * 0.9;
+	// result[x,y]=image1[x,y] * 0.9+image3[x,y] * 0.3
 	add(image1, image3, result);
 
 	namedWindow("result");

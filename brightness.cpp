@@ -8,6 +8,7 @@ double alpha; /**< Simple contrast control */
 int beta; /**< Simple brightness control */
 int run913()
 {
+	// 分别生成两个矩阵，存放原图片和亮度变换后图片new_image
 	Mat image = imread("1.jpg");
 
 	Mat new_image = Mat::zeros(image.size(), image.type());
@@ -27,6 +28,8 @@ int run913()
 			for (int c = 0; c < 3; c++)
 			{
 				// 针对像素的每个色屏做转换
+				//saturate_cast函数防止溢出（运算后值<0或>255）
+				// 低于0 输出0，高于255 输出255，其余值不变
 				new_image.at<Vec3b>(y, x)[c] =
 					saturate_cast<uchar>(alpha*(image.at<Vec3b>(y, x)[c]) + beta);
 			}
