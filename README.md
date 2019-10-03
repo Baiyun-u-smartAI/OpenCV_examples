@@ -2,7 +2,7 @@
 
 ## 从GitHub仓库下载
 
-1. 打开浏览器，进入[OpenCV_examples](https://github.com/Baiyun-u-smartAI/OpenCV_examples)的仓库<br/>![](https://ae01.alicdn.com/kf/Hde48b6c40fdb48bcbc9e4922b8737d92Q.png)<br/>
+1. 打开浏览器，进入[OpenCV_examples](https://github.com/Baiyun-u-smartAI/OpenCV_examples)的仓库<br/>![](https://ae01.alicdn.com/kf/Hde48b6c40fdb48bcbc9e4922b8737d92Q.png)<br/>或者<br/>![](https://ae01.alicdn.com/kf/Hd1b53b50f6ae483c8748cda09ca4bacff.png)<br/>
 
 2. 在网页上（见上图），点击<font color="green">Clone and download</font>>><font color="blue">Download ZIP</font>，将GitHub仓库下载到本地。
 
