@@ -19,4 +19,5 @@ extern int(*run_file_input_output)();
 extern int(*run_write)();
 extern int(*run_AddingImages)();
 extern int(*run_brightness)();
+extern int(*run_Affine_Project)();
 #endif //P8_OPENCV_EXAMPLE_HPP
