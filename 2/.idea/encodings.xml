@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/CannyDetector_Demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/EqualizeHist_Demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Geometric_Transforms_Demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/HoughCircle_Demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/HoughLines_Demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Laplace_Demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/MatchTemplate_Demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Morphology_1.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Morphology_2.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Pyramids.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Remap_Demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Smoothing.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Sobel_Demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Threshold.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/calcBackProject_Demo2.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/calcBackProject_Demo3.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/calcHist_Demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/copyMakeBorder_demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/filter2D_demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/findContours_demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/generalContours_demo1.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/generalContours_demo2.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/hull_demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/main.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/moments_demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/pointPolygonTest_demo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/squares.cpp" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>
