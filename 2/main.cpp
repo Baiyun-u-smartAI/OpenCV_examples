@@ -32,9 +32,14 @@ int main()
 //    ny dd;
 //    *(dd())=7;
 //    cout<<*(dd.a);
+<<<<<<< HEAD
 //    run_BasicLinearTransformsTrackbar();
     char* a="ÎÒ";
     cout<<a;
+=======
+    run_Remap_Demo();
+
+>>>>>>> ca0d3ebe4382b41cc75d8337edea85a9d34b1470
     return 0;
 
 
