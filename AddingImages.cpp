@@ -11,7 +11,7 @@ int run3129()
 
 	Mat src1, src2, dst;
 
-	/// Ask the user enter alpha
+	// 要求用户输入参数α 若α为0，只保留背景图像，若α为1，只保留前景图像
 	std::cout << " 简易线性搅合(Linear Blender) " << std::endl;
 	std::cout << "-----------------------" << std::endl;
 	std::cout << "* 输入 0 到 1 的 alpha 值: ";
@@ -36,7 +36,8 @@ int run3129()
 	namedWindow("Linear Blend", 1);
 
 	beta = (1.0 - alpha);
-	// dst = src1*alpha + src2*beta + gamma;
+	// 图像重叠的算法公式dst = src1*alpha + src2*beta + gamma;
+	// 下式中gamma=0
 	addWeighted(src1, alpha, src2, beta, 0.0, dst);
 
 	imshow("Linear Blend", dst);

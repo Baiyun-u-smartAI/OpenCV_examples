@@ -5,7 +5,7 @@
 #include <vector>
 
 using namespace cv;
-
+// 图片大小不一样的叠加图
 int run2356()
 {
 	Mat image1, image2, image3;

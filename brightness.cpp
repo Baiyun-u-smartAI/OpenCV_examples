@@ -13,7 +13,7 @@ int run913()
 
 	Mat new_image = Mat::zeros(image.size(), image.type());
 	imshow("zero", new_image);
-
+	// α控制对比度，β控制亮度
 	/// Initialize values (Basic Linear Transform)
 	std::cout << " 基本线性转换" << std::endl;
 	std::cout << "-------------------------" << std::endl;

@@ -23,7 +23,7 @@ int run901()
 		fontScale, thickness, &baseline);
 	baseline += thickness;
 
-	// center the text
+	// textOrg 是文字的中心
 	Point textOrg((img.cols - textSize.width) / 2,
 		(img.rows + textSize.height) / 2);
 
@@ -37,7 +37,7 @@ int run901()
 		Scalar(0, 0, 255));
 
 	// then put the text itself
-	// Scalar::all(255)就是Scalar(255, 255, 255)
+	// Scalar::all(255)就是Scalar(255, 255, 255) R G B 都为255
 	putText(img, text, textOrg, fontFace, fontScale,
 		Scalar::all(255), thickness, 8);
 

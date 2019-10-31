@@ -15,7 +15,7 @@ extern int(*run_Drawing_2)();
 extern int(*run_getTextSize)();
 extern int(*run_how_to_scan_images)();
 extern int(*run_mat_mask_operations)();
-extern int(*run_file_input_output)();
+//extern int(*run_file_input_output)();
 extern int(*run_write)();
 extern int(*run_AddingImages)();
 extern int(*run_brightness)();

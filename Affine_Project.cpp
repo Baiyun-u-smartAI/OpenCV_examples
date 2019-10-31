@@ -8,20 +8,21 @@
 using namespace cv;
 
 int run768(){
-    // PerspectiveTransformæ±‚è§£éœ€è¦åŸå§‹å›¾åƒçš„å››ä¸ªç‚¹å’Œå˜æ¢åçš„å››ä¸ªç‚¹
+    // PerspectiveTransformÇó½âĞèÒªÔ­Ê¼Í¼ÏñµÄËÄ¸öµãºÍ±ä»»ºóµÄËÄ¸öµã
     Mat img=imread("Newspaper.jpeg");
-    // å»ºç«‹ä¸¤ä¸ªæ”¾å››ä¸ªç‚¹çš„å®¹å™¨
+    // ½¨Á¢Á½¸ö·ÅËÄ¸öµãµÄÈİÆ÷
     std::vector<Point2f> origin{Point2f(197,13),Point2f(599,124),Point2f(36,262),Point2f(481,441)};
+    // ½¨Á¢Êä³öÍ¼Ïñ¾ØÕó destination£¬´óĞ¡±£³ÖÎªÔ­Í¼Æ¬´óĞ¡
     std::vector<Point2f> destination(4);
     destination[0]= Point2f(0, 0);
     destination[1]= Point2f(img.cols-1, 0);
     destination[2]= Point2f(0, img.rows-1);
     destination[3]= Point2f(img.cols-1, img.rows-1);
-    // æ±‚è§£å•åº”æ€§çŸ©é˜µ
+    // Çó½âµ¥Ó¦ĞÔ¾ØÕó
     Mat transform = getPerspectiveTransform(origin,destination);
-    // æ–°å»ºç”¨äºè¾“å‡ºå›¾åƒçš„çŸ©é˜µimg_trans
+    // ĞÂ½¨ÓÃÓÚÊä³öÍ¼ÏñµÄ¾ØÕóimg_trans
     Mat img_trans = Mat::zeros(img.rows,img.cols,CV_8UC3);
-    // åº”ç”¨å•åº”æ€§çŸ©é˜µå¯¹å›¾åƒè¿›è¡ŒæŠ•å½±å˜æ¢
+    // Ó¦ÓÃµ¥Ó¦ĞÔ¾ØÕó¶ÔÍ¼Ïñ½øĞĞÍ¶Ó°±ä»»
     warpPerspective(img,img_trans,transform,img.size());
     imshow("Unnamed",img_trans);
     waitKey(0);

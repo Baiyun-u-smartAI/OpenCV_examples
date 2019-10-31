@@ -37,18 +37,26 @@ int run137()
 	for (int k = 0; k < i; k++) {
 		// rand() is the MFC random number generator
 		// try qrand() with Qt
+		// 随机产生点
 		int i = rand() % image.cols;
 		int j = rand() % image.rows;
+		// 如果是灰度图
 		if (image.channels() == 1) { // gray-level image
+			//当前点为白色
 			image.at<uchar>(j, i) = 255;
+			// 右点为白色
 			if (j < (int)image.cols-1)
 				image.at<uchar>(j + 1, i) = 255;
+			// 下点为白色
 			if (i < (int)image.rows-1)
 				image.at<uchar>(j, i + 1) = 255;
+			// 右下点为白色
 			if (i < (int)image.cols-1 && j < (int)image.rows-1)
 				image.at<uchar>(j + 1, i + 1) = 255;
 		}
+		//如果是彩色图
 		else if (image.channels() == 3) { // color image
+			// 三通道的颜色改为白色
 			image.at<cv::Vec3b>(j, i)[0] = 255;
 			image.at<cv::Vec3b>(j, i)[1] = 255;
 			image.at<cv::Vec3b>(j, i)[2] = 255;
