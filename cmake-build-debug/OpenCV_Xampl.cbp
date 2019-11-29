@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="OpenCV_Xampl"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\Program Files\;CMake Files\..\..\Program Files\opencv411\;CMake Files\..\..\Program Files\opencv411\build\;CMake Files\..\..\Program Files\opencv411\build\install\;CMake Files\..\..\Program Files\opencv411\build\install\x64\;CMake Files\..\..\Program Files\opencv411\build\install\x64\mingw\;CMake Files\..\..\Program Files\opencv411\build\install\x64\mingw\lib\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Git/OpenCV_examples/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OpenCV_Xampl">
+				<Option output="D:/Git/OpenCV_examples/cmake-build-debug/OpenCV_Xampl.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Git/OpenCV_examples/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/opencv411/build/install/include"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 OpenCV_Xampl"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OpenCV_Xampl/fast">
+				<Option output="D:/Git/OpenCV_examples/cmake-build-debug/OpenCV_Xampl.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Git/OpenCV_examples/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Program Files/opencv411/build/install/include"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 OpenCV_Xampl/fast"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Git/OpenCV_examples/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Git/OpenCV_examples/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/mingw64/bin/mingw32-make.exe -f &quot;D:/Git/OpenCV_examples/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Git/OpenCV_examples/AddingImages.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/Affine_Project.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/Drawing_1.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/Drawing_2.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/Effect.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/Logo.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/OpenCV_example.hpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/Snow.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/brightness.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/delaunay2.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/display_image.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/getTextSize.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/how_to_scan_images.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/load_modify_save_image.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/main.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/mat_mask_operations.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/mat_the_basic_image_container.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/write.cpp">
+			<Option target="OpenCV_Xampl"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/../../Program Files/opencv411/build/install/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\Program Files\opencv411\build\install\"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/../../Program Files/opencv411/build/install/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Program Files\opencv411\build\install\"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/../../Program Files/opencv411/build/install/x64/mingw/lib/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Program Files\opencv411\build\install\x64\mingw\lib\"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/../../Program Files/opencv411/build/install/x64/mingw/lib/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\Program Files\opencv411\build\install\x64\mingw\lib\"/>
+		</Unit>
+		<Unit filename="D:/Git/OpenCV_examples/../../Program Files/opencv411/build/install/x64/mingw/lib/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\Program Files\opencv411\build\install\x64\mingw\lib\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

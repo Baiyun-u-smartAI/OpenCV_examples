@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="qtprojects" targetName="qtprojects" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="38017011-7010-457e-9f29-3ab57aaf851c" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectId" id="1UDqI2ode3ClcDye6PRuz1Z2O6p" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/build-qtprojects-Desktop_Qt_5_13_2_MinGW_64_bit-Release/Makefile" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="two.files.diff.last.used.file" value="$USER_HOME$/Documents/build-qtprojects-Desktop_Qt_5_13_2_MinGW_64_bit-Release/Makefile" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pc002\CLionProjects\QT\TrainSample" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="qtprojects" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="qtprojects" TARGET_NAME="qtprojects" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="qtprojects" RUN_TARGET_NAME="qtprojects">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="38017011-7010-457e-9f29-3ab57aaf851c" name="Default Changelist" comment="" />
+      <created>1574901429097</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574901429097</updated>
+      <workItem from="1574901430774" duration="2536000" />
+      <workItem from="1574907397517" duration="997000" />
+      <workItem from="1574908515361" duration="806000" />
+      <workItem from="1574909485780" duration="300000" />
+      <workItem from="1574909807836" duration="1675000" />
+      <workItem from="1574915191387" duration="3205000" />
+      <workItem from="1574918614992" duration="4848000" />
+      <workItem from="1574931959745" duration="294000" />
+      <workItem from="1574949125715" duration="4124000" />
+      <workItem from="1574953346836" duration="130000" />
+      <workItem from="1574998648592" duration="16373000" />
+      <workItem from="1575022077678" duration="10157000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

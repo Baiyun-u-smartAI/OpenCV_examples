@@ -1,0 +1,3 @@
+D:/Git/OpenCV_examples/cmake-build-debug/CMakeFiles/OpenCV_Xampl.dir
+D:/Git/OpenCV_examples/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Git/OpenCV_examples/cmake-build-debug/CMakeFiles/rebuild_cache.dir
