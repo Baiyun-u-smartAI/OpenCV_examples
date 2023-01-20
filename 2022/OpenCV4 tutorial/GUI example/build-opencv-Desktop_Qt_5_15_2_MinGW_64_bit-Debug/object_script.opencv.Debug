@@ -1,0 +1,10 @@
+debug/drag_and_drop.o
+debug/interactiveview.o
+debug/main.o
+debug/myapplication.o
+debug/widget.o
+debug/wrapper.o
+debug/qrc_image.o
+debug/moc_drag_and_drop.o
+debug/moc_interactiveview.o
+debug/moc_widget.o

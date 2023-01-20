@@ -1,0 +1,6 @@
+打开文件夹ffmpeg
+udp推流点击udp.bat
+rtsp推流点击rtsp.bat
+rtmp推流点击rtmp.bat
+带密码的rtmp推流点击pwd_rtmp.bat，默认用户名admin，密码a12345678
+C++/C#/python代码中的ip地址需要修改为本电脑的IP或127.0.0.1

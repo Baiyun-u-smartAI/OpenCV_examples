@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Windows-1-0-1.jpg</file>
+        <file>kernel.png</file>
+    </qresource>
+</RCC>

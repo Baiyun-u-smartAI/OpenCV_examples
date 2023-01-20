@@ -1,0 +1,8 @@
+import cv2 as cv
+
+def main():
+    src = cv.imread("aaa.jpg",cv.IMREAD_COLOR)
+    print(src[455][317])# 读取(317,455)的数据,相当于读455行，317列的数据
+    print(src[455][317][2])# 读(317, 455)的R通道数据
+if __name__ == '__main__':
+    main()

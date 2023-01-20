@@ -1,0 +1,10 @@
+release/drag_and_drop.o
+release/interactiveview.o
+release/main.o
+release/myapplication.o
+release/widget.o
+release/wrapper.o
+release/qrc_image.o
+release/moc_drag_and_drop.o
+release/moc_interactiveview.o
+release/moc_widget.o

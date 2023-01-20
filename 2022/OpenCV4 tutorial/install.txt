@@ -1,0 +1,6 @@
+-Version is the latest version 
+
+Install-Package OpenCvSharp4 -Version 4.6.0.20220608
+Install-Package OpenCvSharp4.runtime.win -Version 4.6.0.20220608
+Install-Package OpenCvSharp4.Windows -Version 4.6.0.20220608
+

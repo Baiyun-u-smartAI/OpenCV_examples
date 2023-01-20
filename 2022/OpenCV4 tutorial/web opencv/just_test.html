@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCV tutorial</title>
+    <script async src="js/opencv.js"></script>
+</head>
+<body >
+    <button id="showBlank" style='font-size:40px'>点击我测试</button>
+    <br/>
+    <!-- 定义显示图片的区域 -->
+    <canvas id="dst"></canvas>
+</body>
+<script type="text/javascript">
+   
+    // 点击按钮触发函数
+    showBlank.onclick = function(){
+        // 在dst上显示一张100x100全黑的图
+        cv.imshow('dst',cv.Mat.zeros(100,100,cv.CV_8UC3));
+
+    }
+
+
+</script>
+</html>

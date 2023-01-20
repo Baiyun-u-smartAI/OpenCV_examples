@@ -1,0 +1,2 @@
+start rtsp-simple-server.exe
+start ffmpeg -re -stream_loop -1  -i "Beautiful blue 3d ball abstract background.mp4" -c copy -f rtsp -s 850*480  -r 25 -y rtsp://192.168.3.4:8554/live/test                                                                       

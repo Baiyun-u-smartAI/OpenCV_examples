@@ -1,0 +1,14 @@
+﻿<Window x:Class="opencv_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:opencv_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="480" Width="800">
+    <StackPanel Orientation="Vertical">
+        <Image x:Name="ImageCV" Height="400" Width="800"></Image>
+        <ScrollBar x:Name="BrightnessBar" Orientation="Horizontal" Maximum="255" Minimum="-255" Value="{Binding ElementName=status, Path=Content}" ValueChanged="BrightnessBar_ValueChanged" />  <!--与label显示的值关联binding--> 
+        <Label x:Name="status" FontSize="18" > 0 </Label>
+    </StackPanel>
+</Window>
