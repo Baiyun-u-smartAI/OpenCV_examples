@@ -2,7 +2,7 @@
 
 ## [下载](https://dotnet.microsoft.com/zh-cn/download/dotnet)x64的压缩包，并解压到文件夹，新建目录test
 
-![image-20220815173924100](http://127.0.0.1:9000/test/images/image-20220815173924100.png)
+![image-20220815173924100](image-20220815173924100.png)
 
 
 
@@ -19,11 +19,11 @@ cd test
 ..\dotnet.exe new --list
 ```
 
-![image-20220815174208230](http://127.0.0.1:9000/test/images/image-20220815174208230.png)
+![image-20220815174208230](image-20220815174208230.png)
 
 创建后可以查看到工程目录下的sln文件等：
 
-![image-20220815174355960](http://127.0.0.1:9000/test/images/image-20220815174355960.png)
+![image-20220815174355960](image-20220815174355960.png)
 
 ## 编译工程
 
@@ -31,7 +31,7 @@ cd test
 ..\dotnet.exe build .\test\ #在dotnet下的test路径运行
 ```
 
-![image-20220815174507665](http://127.0.0.1:9000/test/images/image-20220815174507665.png)
+![image-20220815174507665](image-20220815174507665.png)
 
 ## 运行工程
 
@@ -39,13 +39,13 @@ cd test
 ..\dotnet.exe run --project=.\test\ # project 参数可以指定sln所在目录
 ```
 
-![image-20220815174905904](http://127.0.0.1:9000/test/images/image-20220815174905904.png)
+![image-20220815174905904](image-20220815174905904.png)
 
 ## 增加三方包（以OpenCVSharp为例）
 
 1. 可以从[官网](https://www.nuget.org/packages)查找安装包，并找到要添加包的`.NET CLI`命令
 
-   ![image-20220815180131896](http://127.0.0.1:9000/test/images/image-20220815180131896.png)
+   ![image-20220815180131896](image-20220815180131896.png)
 
 2. 进入`sln文件`所在的文件夹，输入一下命令
 
@@ -54,7 +54,7 @@ cd test
    ..\..\dotnet add package OpenCvSharp4.runtime.win --version 4.6.0.20220608
    ```
 
-   ![image-20220815180347524](http://127.0.0.1:9000/test/images/image-20220815180347524.png)
+   ![image-20220815180347524](image-20220815180347524.png)
 
 3. 测试OpenCV，修改`program.cs`文件为
 
