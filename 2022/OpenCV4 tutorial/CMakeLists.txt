@@ -4,10 +4,10 @@ project(opencv_work CXX)
 set(OUT_NAME "test") # 输出文件名test
 #set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin/Release) # 输出的可执行文件在bin文件夹下
 set(CMAKE_BUILD_TYPE Release) # 可以填Debug或Release
-
+find_package(PkgConfig REQUIRED)
 if (PKG_CONFIG_FOUND)
     #! msys64 可以用pkg-config进行管理
-    find_package(PkgConfig REQUIRED)
+    
     # PKGS_DEP是用户自定义的cmake模块名，REQUIRED后面是要导入的模块名称（以空格分割）
     pkg_search_module(OPENCV4 REQUIRED opencv4)
 
