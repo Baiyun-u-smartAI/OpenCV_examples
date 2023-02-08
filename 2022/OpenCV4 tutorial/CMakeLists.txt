@@ -4,7 +4,7 @@ project(opencv_work CXX)
 set(OUT_NAME "test") # 输出文件名test
 #set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin/Release) # 输出的可执行文件在bin文件夹下
 set(CMAKE_BUILD_TYPE Release) # 可以填Debug或Release
-find_package(PkgConfig REQUIRED)
+find_package(PkgConfig) # 不能加 REQUIRED，因为找不到会报错
 if (PKG_CONFIG_FOUND)
     #! msys64 可以用pkg-config进行管理
     
